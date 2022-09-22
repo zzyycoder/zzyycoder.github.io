@@ -1,6 +1,6 @@
 ---
 title: 'Magento 2: Object Manager是如何触发代码生成的'
-date: 2022-03-08
+date: 2022-08-08
 categories: []
 tags: []
 mermaid: true
