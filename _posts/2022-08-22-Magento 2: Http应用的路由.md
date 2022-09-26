@@ -70,21 +70,3 @@ public function getModulesByFrontName($frontName, $scope = null)
     return array_unique($modules);
 }
 ```
-
-```mermaid
-classDiagram
-direction LR
-FrontController ..> RouterList
-FrontController : $_routerList
-
-RouterList ..> RouterInterface
-RouterList : $routerList
-<<Interface>> RouterInterface
-Base ..|> RouterInterface
-Base : $_routeConfig
-
-Base ..> Config
-
-Config : $_reader
-Config ..> Reader
-```

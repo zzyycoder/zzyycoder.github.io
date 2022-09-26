@@ -31,12 +31,5 @@ public function createClassDefinition()
 ```
 在 `Magento\Framework\App\ObjectManagerFactory` 的 `create` 方法中做过 `createClassDefinition` 方法的调用。
 `\Magento\Framework\ObjectManager\ObjectManager` 依赖 `FactoryInterface` ,而 `FactoryInterface` 依赖 `DefinitionInterface`。
-```mermaid
-classDiagram
-direction LR
-ObjectManager ..> AbstractFactory
-ObjectManager : _factory
-AbstractFactory ..> Runtime
-AbstractFactory : definitions
-```
+
 以上。
