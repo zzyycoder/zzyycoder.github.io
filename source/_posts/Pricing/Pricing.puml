@@ -1,0 +1,27 @@
+@startuml
+interface SaleableInterface {
+    getQty()
+    getPriceInfo()
+}
+
+class Product implements SaleableInterface {
+    $_priceInfo
+}
+
+interface PriceInfoInterface {
+    getPrices()
+    getPrice($priceCode)
+}
+
+class Base implements PriceInfoInterface {
+    $priceCollection
+}
+Product o-right-> Base
+
+class Collection {
+    $saleableItem
+    $quantity
+}
+Base o--> Collection
+Collection o--> Product
+@enduml
