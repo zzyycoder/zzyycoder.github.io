@@ -1,7 +1,7 @@
 ---
 title: Pricing
 date: 2023-12-05 16:51:21
-tags: Product Price
+tags: Pricing
 ---
 ### 哪些元素包含价格
 
